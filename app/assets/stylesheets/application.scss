@@ -1,0 +1,33 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.background-image {
+  background-image: url("good_background.jpg");
+  background-position: center center;
+  background-size: cover;
+   margin-left:-5%;
+  padding :0px;
+  min-height: 800px;
+  width: 110% !important;
+  margin-top: -12%;
+
+
+  .catch-line-container {
+    margin-top: 8% !important;
+    padding-top: 10%;
+  }
+  .row {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .col-xs-12 {
+    margin-top: 1%;
+  }
+  .btn-lg {
+    padding: .5% 2%;
+  }
+}
+
+.btn-action {
+  padding: 1% 5% ;
+}
