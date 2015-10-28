@@ -1,7 +1,27 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+food_list = [
+  [ "Toast", 20 ],
+  [ "Lasagna", 250 ],
+  [ "Oatmeal", 50 ],
+  [ "Fruit", 25 ],
+  [ "Peanut Butter", 20],
+  [ "Sandwich", 500]
+]
+
+food_list.each do |name, calorie|
+  Food.create(name: name, calories: calorie )
+end
+
+exercise_list = [
+  [ "Bike", 20 ],
+  [ "Run", 250 ],
+  [ "Tennis", 50 ],
+  [ "Ping-Pong", 25 ],
+  [ "Walking", 20],
+  [ "Ice Skatin", 500]
+]
+
+exercise_list.each do |name, calorie|
+  Exercise.create(name: name, calories: calorie )
+end
+
+
