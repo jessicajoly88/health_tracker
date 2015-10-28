@@ -1,0 +1,6 @@
+
+     <% @exercises.each do |exercises| %>
+      <%= check_box_tag :exercises, tag.id, @user.exercises.include?(tag), :name => 'user[exercise][]' %>
+      <%= label_tag :exercises, tag.name %>
+   
+    <%= f.submit "Submit", class: "btn btn-default center-block" %>

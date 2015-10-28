@@ -3,3 +3,16 @@
 </div>
 <hr>
 <br>
+
+<div class = "container">
+  <h1>Add foods and exercises!</h1>
+  <br>
+
+ 
+ Add food!
+
+ <% @foods.each do |food| %>
+       <%= check_box_tag :foods, food.id, @user.foods.include?(food), :name => 'user[food]' %>
+       <%= label_tag :foods, food.name %>
+   <% end %>
+      
