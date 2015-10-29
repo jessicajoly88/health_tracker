@@ -5,14 +5,12 @@
 <br>
 
 <div class = "container">
-  <h1>Add foods and exercises!</h1>
-  <br>
+  <% @user.foods.each do |food| %>
+    <%= food.name %>
+    <%= food.calories %>
+  <% end %>
+<br>
+ Add some food :
+<%= render 'food_form' %>
 
- 
- Add food!
-
- <% @foods.each do |food| %>
-       <%= check_box_tag :foods, food.id, @user.foods.include?(food), :name => 'user[food]' %>
-       <%= label_tag :foods, food.name %>
-   <% end %>
-      
+</div>
